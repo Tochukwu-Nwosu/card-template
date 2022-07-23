@@ -21,7 +21,7 @@ div.card {
     height: auto;
     padding: 40px;
     border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -36,7 +36,7 @@ div.card img {
 div.card h1 {
     font-weight: 500;
 }
-div.card div {
+div.card > div {
     margin: 20px;
 }
 div.card div a {
@@ -52,7 +52,6 @@ div.card div a {
     transition: .5s;
     -webkit-transition: .5s;
 }
-
 div.card button {
     border: none;
     background-color: #ffffff;
@@ -80,7 +79,7 @@ div.card div a:active, div.card button:active {
 
 @media screen and (max-height: 600px) {
     div.card {
-        height: 95vh;
+        height: 90vh;
     }
 }
 @media screen and (max-height: 462px) {
@@ -95,12 +94,6 @@ div.card div a:active, div.card button:active {
 @media screen and (max-height: 320px) {
     div.card {
         height: 90vh;
-    }
-}
-@media screen and (max-width: 600px) {
-    div.card {
-        width: 95vw;
-        overflow: hidden;
     }
 }
 @media screen and (max-width: 462px) {
