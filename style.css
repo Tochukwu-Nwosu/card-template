@@ -1,13 +1,73 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 body {
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background: url(images/rock.JPG) no-repeat center;
+    background: url(assets/images/rock.JPG) no-repeat center;
     background-size: cover;
-    background-color: blue;
+    background-color: #0000ff;
     background-blend-mode: multiply;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.card {
+    color: #ffffff;
+    width: auto;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+div.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+div.card h1 {
+    font-weight: 500;
+}
+div.card div a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.1rem;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+div.card button {
+    border: none;
+    background-color: #ffffff;
+    color: #0000ff;
+    margin: 20px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s;
+    -webkit-transition: .5s;
+}
+
+div.card:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2);
+}
+div.card div a:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+}
+div.card button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 255, 1);
 }
