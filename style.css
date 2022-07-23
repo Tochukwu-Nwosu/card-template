@@ -18,6 +18,7 @@ body {
 div.card {
     color: #ffffff;
     width: auto;
+    height: auto;
     padding: 40px;
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.15);
@@ -35,6 +36,9 @@ div.card img {
 div.card h1 {
     font-weight: 500;
 }
+div.card div {
+    margin: 20px;
+}
 div.card div a {
     display: inline-block;
     text-decoration: none;
@@ -42,7 +46,7 @@ div.card div a {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 10px 5px;
     padding: 5px;
     font-size: 1.1rem;
     transition: .5s;
@@ -71,4 +75,37 @@ div.card div a:hover, div.card button:hover {
 }
 div.card div a:active, div.card button:active {
     box-shadow: none;
+}
+
+
+@media screen and (max-height: 600px) {
+    div.card {
+        height: 95vh;
+    }
+}
+@media screen and (max-height: 462px) {
+    div.card {
+        height: 80vh;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-height: 320px) {
+    div.card {
+        height: 90vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.card {
+        width: 95vw;
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 462px) {
+    div.card {
+        width: 90vw;
+        overflow: hidden;
+    }
 }
