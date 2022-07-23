@@ -20,6 +20,7 @@ div.card {
     width: auto;
     padding: 40px;
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
@@ -65,9 +66,9 @@ div.card button {
 div.card:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2);
 }
-div.card div a:hover {
+div.card div a:hover, div.card button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 255, 1);
 }
-div.card button:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 255, 1);
+div.card div a:active, div.card button:active {
+    box-shadow: none;
 }
