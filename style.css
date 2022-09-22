@@ -9,7 +9,7 @@ body {
     height: 100vh;
     background: url(assets/images/rock.JPG) no-repeat center;
     background-size: cover;
-    background-color: #0000ff;
+    background-color: #000099;
     background-blend-mode: multiply;
     display: flex;
     justify-content: center;
@@ -52,12 +52,14 @@ div.card div a {
     transition: .5s;
     -webkit-transition: .5s;
 }
-div.card button {
+div.card .button {
     border: none;
+    text-decoration: none;
     background-color: #ffffff;
     color: #0000ff;
     margin: 20px;
-    padding: 12px 20px;
+    padding: 7px;
+    width: 100px;
     border-radius: 30px;
     font-size: 0.9rem;
     font-weight: 500;
@@ -69,10 +71,10 @@ div.card button {
 div.card:hover {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 40px rgba(255, 255, 255, 0.2);
 }
-div.card div a:hover, div.card button:hover {
+div.card div a:hover, div.card .button:hover {
     box-shadow: 0 0 10px rgba(0, 0, 255, 1);
 }
-div.card div a:active, div.card button:active {
+div.card div a:active, div.card .button:active {
     box-shadow: none;
 }
 
